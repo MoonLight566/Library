@@ -1,75 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="style.css" />
-		<script src="script.js" defer></script>
-		<title>Document</title>
-	</head>
-	<body>
-		<div class="header" style="text-align: center">
-			<h1 style="font-size: xxx-large; margin: 0; margin-top: 10px">
-				Elegant Library
-			</h1>
-		</div>
-		<div class="body">
-			<div class="container">
-				<button type="submit" onclick="Pop()"><b>+ AddBook</b></button>
-				<div class="books-grid" id="booksGrid"></div>
-				<div id="main">
-					<div id="popup">
-						<form action="" id="form" name="form">
-							<img id="close" src="img/icons8-x-48.png" onclick="div_hide()" />
-							<h1 style="font-size: xx-large"><b>Add New Book</b></h1>
-							<input
-								id="Title"
-								name="Title"
-								placeholder="Title"
-								type="text"
-								required
-							/>
-							<input
-								id="Author"
-								name="Author"
-								placeholder="Author"
-								type="text"
-								required
-							/>
-							<input
-								id="Pages"
-								name="Pages"
-								placeholder="Pages"
-								type="number"
-								required
-							/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="header" style="text-align: center">
+      <h1 style="font-size: xxx-large; margin: 0; margin-top: 10px">
+        Elegant Library
+      </h1>
+    </div>
+    <div class="body">
+      <div class="container">
+        <button type="submit" onclick="Pop()"><b>+ AddBook</b></button>
+        <div class="books-grid" id="booksGrid"></div>
+        <div id="main">
+          <div id="popup">
+            <form action="" id="form" name="form" >
+              <img id="close" src="img/icons8-x-48.png" onclick="div_hide()" />
+              <h1 style="font-size: xx-large"><b>Add New Book</b></h1>
+              <input
+                id="Title"
+                name="Title"
+                placeholder="Title"
+                type="text"
+                minlength="3"
+                ;
+                required
+              />
+              <input
+                id="Author"
+                name="Author"
+                placeholder="Author"
+                type="text"
+                minlength="3"
+                ;
+                required
+              />
+              <input
+                id="Pages"
+                name="Pages"
+                placeholder="Pages"
+                type="number"
+                min="1"
+                required
+              />
 
-							<label for="Read">Have you read it?</label>
-							<input
-								style="width: 20px; height: 15px; margin-top: 4px"
-								id="Read"
-								name="Read"
-								value="1"
-								type="checkbox"
-							/>
-
-							<button
+              <label for="Read">
+                <input
+                  style="width: 20px; height: 15px; margin-top: 4px"
+                  id="Read"
+                  name="Read"
+                  value="1"
+                  type="checkbox"
+                />
+                Have you read it?</label
+              >
+              <input id="btn1" type="submit" value="Submit" />
+              <!-- <button
 								class="btn1"
 								type="submit"
 								onclick="addBookToLibrary(event);"
 							>
 								Submit
-							</button>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="footer">
-			<p style="text-align: center">
-				<b>Copyright © 2023 Moonlight566</b>
-			</p>
-		</div>
-	</body>
+							</button> -->
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <p style="text-align: center">
+        <b>Copyright © 2023 Moonlight566</b>
+      </p>
+    </div>
+  </body>
 </html>
